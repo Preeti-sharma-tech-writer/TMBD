@@ -2,7 +2,7 @@
 The keyword can be a movie title or original title.
 
 ## Endpoint
-<GET> </search/movie>
+`GET /search/movie`
 Full URL: https://api.themoviedb.org/3/search/movie
 
 ## Authentication
@@ -11,11 +11,12 @@ Requires a Bearer token in the Authorization header. See [Authentication](../03-
 ## Parameters
 | Name | In | Type | Required | Description |
 |------|----|------|----------|-------------|
-| query  | query | string | yes | Searches for the movie whose title or original title matches the text entered. |
-| include_adult  | query  |  boolean | no | When `true`, allows adult titles to appear in the results. Defaults to `false`. |
-| language  | query  | string | no | Sets the language of translatable response text (such as `title` and `overview.`) |
-| primary_release_year  | query  |  integer | no | Filters results to movies whose primary (official) release year matches. |
-| page  | query  |  integer | no | Returns the specified page of results. Defaults to `1`.|
+| `query`  | query | string | yes | Searches for the movie whose title or original title matches the text entered. |
+| `include_adult`  | query  |  boolean | no | When `true`, allows adult titles to appear in the results. Defaults to `false`. |
+| `language`  | query  | string | no | Sets the language of translatable response text (such as `title` and `overview`).   Format used is ISO-639-1, example en-US. |
+| `primary_release_year`  | query  |  string | no | Filters results to movies whose primary (official) release year matches. |
+| `year`  | query  |  string | no | Filters results to movies that had any release in the given year (broader than primary_release_year, which matches only the official release year). |
+| `page`  | query  |  integer | no | Returns the specified page of results. Defaults to `1`.|
 
 ## Example request
 <curl --location 'https://api.themoviedb.org/3/search/movie?query=her&include_adult=false&language=es-ES&primary_release_year=2010&page=3' \
@@ -67,7 +68,6 @@ print(response.text)
             "popularity": 0.2735,
             "poster_path": "/beSJRL88gitxFFnViOppnU7BhEj.jpg",
             "release_date": "2010-07-08",
-            "softcore": false,
             "video": false,
             "vote_average": 5.2,
             "vote_count": 3
@@ -86,7 +86,6 @@ print(response.text)
             "popularity": 0.8241,
             "poster_path": "/1nTTDblwirJMMhqeJu70pAmetuK.jpg",
             "release_date": "2010-07-02",
-            "softcore": false,
             "video": false,
             "vote_average": 6.7,
             "vote_count": 30
@@ -106,7 +105,6 @@ print(response.text)
             "popularity": 0.2348,
             "poster_path": "/gXIKoLIVNij1bgeQFo5y68t7qP4.jpg",
             "release_date": "2010-04-01",
-            "softcore": false,
             "video": false,
             "vote_average": 6.7,
             "vote_count": 20
@@ -125,7 +123,6 @@ print(response.text)
             "popularity": 0.7118,
             "poster_path": "/npSAVeXf29LN85PzTnrG0UxLWm3.jpg",
             "release_date": "2010-06-14",
-            "softcore": false,
             "video": false,
             "vote_average": 6.0,
             "vote_count": 1
@@ -144,7 +141,6 @@ print(response.text)
             "popularity": 0.0848,
             "poster_path": "/jlkS9L5bnmONHidolMDa0GUMo2A.jpg",
             "release_date": "2010-10-26",
-            "softcore": false,
             "video": true,
             "vote_average": 8.0,
             "vote_count": 1
@@ -164,7 +160,6 @@ print(response.text)
             "popularity": 0.356,
             "poster_path": "/ndtPdT8f7iJRJhRqygfYTmFodKC.jpg",
             "release_date": "2010-09-13",
-            "softcore": false,
             "video": false,
             "vote_average": 10.0,
             "vote_count": 1
@@ -184,7 +179,6 @@ print(response.text)
             "popularity": 0.0927,
             "poster_path": "/ue2EaIM5hkXWPSoP651gPQqTQuQ.jpg",
             "release_date": "2010-05-01",
-            "softcore": false,
             "video": false,
             "vote_average": 0.0,
             "vote_count": 0
@@ -203,7 +197,6 @@ print(response.text)
             "popularity": 0.3293,
             "poster_path": "/ccYsqSP0jauMqU7C81LGKIQYwWm.jpg",
             "release_date": "2010-02-18",
-            "softcore": false,
             "video": false,
             "vote_average": 5.0,
             "vote_count": 2
@@ -222,7 +215,6 @@ print(response.text)
             "popularity": 0.4141,
             "poster_path": null,
             "release_date": "2010-12-08",
-            "softcore": false,
             "video": false,
             "vote_average": 0.0,
             "vote_count": 0
@@ -242,7 +234,6 @@ print(response.text)
             "popularity": 0.3374,
             "poster_path": null,
             "release_date": "2010-09-13",
-            "softcore": false,
             "video": false,
             "vote_average": 5.0,
             "vote_count": 2
@@ -262,7 +253,6 @@ print(response.text)
             "popularity": 0.2233,
             "poster_path": "/mzwiMxr0a5xOe3R8d5c2DlkCYzM.jpg",
             "release_date": "2010-06-01",
-            "softcore": false,
             "video": false,
             "vote_average": 5.977,
             "vote_count": 22
@@ -279,7 +269,6 @@ print(response.text)
             "popularity": 0.1007,
             "poster_path": null,
             "release_date": "2010-02-01",
-            "softcore": false,
             "video": false,
             "vote_average": 0.0,
             "vote_count": 0
@@ -298,7 +287,6 @@ print(response.text)
             "popularity": 0.1352,
             "poster_path": "/x7clkfV9AQ42KMOYDpnbnNBeBhC.jpg",
             "release_date": "2010-10-10",
-            "softcore": false,
             "video": false,
             "vote_average": 3.0,
             "vote_count": 6
@@ -317,7 +305,6 @@ print(response.text)
             "popularity": 0.6672,
             "poster_path": "/qoVpsQJNtajF4fBhIelRPet9p28.jpg",
             "release_date": "2010-04-02",
-            "softcore": false,
             "video": false,
             "vote_average": 4.0,
             "vote_count": 4
@@ -337,7 +324,6 @@ print(response.text)
             "popularity": 0.0997,
             "poster_path": "/hJwdD1ESwwIIcfGG54gidqAJxmS.jpg",
             "release_date": "2010-11-08",
-            "softcore": false,
             "video": false,
             "vote_average": 5.3,
             "vote_count": 3
@@ -358,7 +344,6 @@ print(response.text)
             "popularity": 0.4437,
             "poster_path": "/1vlMZBcBIoCHjOtOVk9FHAF0lPb.jpg",
             "release_date": "2010-09-24",
-            "softcore": false,
             "video": false,
             "vote_average": 5.8,
             "vote_count": 4
@@ -377,7 +362,6 @@ print(response.text)
             "popularity": 0.7873,
             "poster_path": "/djTNwgmXKNNJ4PHbTbWTUrgvVHj.jpg",
             "release_date": "2010-06-21",
-            "softcore": false,
             "video": false,
             "vote_average": 8.0,
             "vote_count": 1
@@ -397,7 +381,6 @@ print(response.text)
             "popularity": 0.1073,
             "poster_path": null,
             "release_date": "2010-10-01",
-            "softcore": false,
             "video": false,
             "vote_average": 0.0,
             "vote_count": 0
@@ -414,7 +397,6 @@ print(response.text)
             "popularity": 0.1083,
             "poster_path": null,
             "release_date": "2010-06-28",
-            "softcore": false,
             "video": true,
             "vote_average": 4.8,
             "vote_count": 2
@@ -433,7 +415,6 @@ print(response.text)
             "popularity": 0.083,
             "poster_path": "/4jjPTR58LydhhcpGOOrVoj5bkQD.jpg",
             "release_date": "2010-01-01",
-            "softcore": false,
             "video": false,
             "vote_average": 5.0,
             "vote_count": 2
@@ -451,11 +432,12 @@ print(response.text)
 |  `total_pages`  |  integer |   The total number of pages available for this query     |
 |  `total_results`  |  integer |   The total number of movies available for this query     |
 |  `results[].adult`  | boolean  |   Whether the movie is classified as adult content  |
-|  `results[].genre_ids'  |  array |    The ids of the genre of the movie     |
+|  `results[].genre_ids`  |  array |    The ids of the genre of the movie     |
 |  `results[].id`  | integer  |   The id of the movie     |
 |  `results[].title`  |  string |  The title of the movie       |
 |  `results[].original_title`  | string  |    The original title of the movie      |
 |  `results[].original_language`  | string  |    The original language of the movie     |
+|  `results[].backdrop_path` | string | The partial path of the movie's backdrop image.
 |  `results[].overview`  | string  |    The description of the movie     |
 |  `results[].popularity`  | number  |    TMDB's popularity score for the movie     |
 |  `results[].poster_path`  | string  |    The partial path of the movie's poster image     |
@@ -467,4 +449,5 @@ print(response.text)
 ## Errors
 | Status | Meaning | Likely cause |
 |--------|---------|--------------|
-| 401 | Unauthorized | Missing/invalid API key |
+| 401 | Unauthorized | API key either invalid or missing for authorization |
+| 404 | Not Found | The requested path might be incorrect|
