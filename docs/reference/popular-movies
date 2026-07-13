@@ -3,7 +3,7 @@
 Get the list of movies sorted by popularity.
 
 ## Endpoint
-`Get /movie/popular`
+`GET /movie/popular`
 
 Full URL: `https://api.themoviedb.org/3/movie/popular`
 
@@ -13,7 +13,9 @@ Requires a Bearer token in the `Authorization` header. See [Authentication](../0
 ## Parameters
 | Name | In | Type | Required | Description |
 |------|----|------|----------|-------------|
-| popular | path | string | yes |  |
+| language | query | string | no | Sets the language of translatable response text (such as title and overview). Format used is ISO-639-1, example hi-IN. Default value is en-US. |
+|  page  |  query  |  integer  |  no  |  Returns the specified page of results. Defaults to 1  |
+|  region  |  query  |  string  |  no |  Filters the results that are released in the specific country. Format used is ISO-3166-1. Default value is US. |
 
 ## Example request
 <curl curl --location 'https://api.themoviedb.org/3/movie/popular' \
@@ -66,7 +68,6 @@ print(response.text)
             "popularity": 697.4596,
             "poster_path": "/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
             "release_date": "2026-05-13",
-            "softcore": false,
             "video": false,
             "vote_average": 8.273,
             "vote_count": 2558
@@ -88,7 +89,6 @@ print(response.text)
             "popularity": 668.4493,
             "poster_path": "/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
             "release_date": "2026-06-17",
-            "softcore": false,
             "video": false,
             "vote_average": 7.398,
             "vote_count": 554
@@ -108,38 +108,41 @@ print(response.text)
             "popularity": 486.3209,
             "poster_path": "/259wnijEJoJLPuZuscxDTqwnypw.jpg",
             "release_date": "2026-06-10",
-            "softcore": false,
             "video": false,
             "vote_average": 6.689,
             "vote_count": 845
-        },
+        }
     ],
     "total_pages": 57937,
     "total_results": 1158724
 }>
+
+**Note**: The list updates frequently; your results will differ from the example.
 
 ## Response fields
 | Field | Type | Description |
 |-------|------|-------------|
 | `page`  | integer  | The page number with the corresponding results  |
 | `results[].adult`  | boolean  | Whether the movie is classified as adult content  |
-| `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the /configuration[] API |
-| `results[].genre_ids` | integer  |   The id(s) of the genre of the movie  |
+| `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the /configuration API |
+| `results[].genre_ids` | array  |   The id(s) of the genre of the movie  |
 | `results[].id` | integer  |   The id of the movie    |
 | `results[].title` | string | The title of the movie. The title is changed to the language set in query param   |
 | `results[].original_language` | string |    The original language of the movie. The format used is iso_639_1      |
-| `results[].original_title | string |    The original title of the movie      |
-| `results[].overview | string |    |    The description of the movie. The overview is changed to the language set in query param    |
+| `results[].original_title` | string |    The original title of the movie      |
+| `results[].overview` | string |     The description of the movie. The overview is changed to the language set in query param    |
 | `results[].popularity`  | number  |    TMDB's popularity score for the movie     |
 | `results[].poster_path`  | string  |    The partial path of the movie's poster image. Retrieve the full image URL by calling the /configuration[] API  |
-| `results[].release_date`  | string  |    The actual release date of the movie  |
-| `results[].original_title | string |    The original title of the movie      |
-| `results[].original_title | string |    The original title of the movie      |
-| `results[].original_title | string |    The original title of the movie      |
+| `results[].release_date`  | string  |    The primary release date of the movie  |
+| `results[].video` | boolean |    Whether the official video(s) of the movie are present     |
+| `results[].vote_average` | number |   Average voting of the movie      |
+| `results[].vote_count` | integer |   The total number of votes given to the movie     |
+| `total_pages` | integer |   The total number of pages that constitute the list     |
+| `total_results` | integer |   The total number of results the list contains     |
 
 
 ## Errors
 | Status | Meaning | Likely cause |
 |--------|---------|--------------|
-| 401 | Unauthorized | Missing/invalid token |
-| ... | ... | ... |
+| 401 | Unauthorized | API key either invalid or missing for authorization |
+| 404	| Not Found	|  The requested path has missing or incorrect entry.  |
