@@ -199,7 +199,7 @@ print(response.text)
 |  `results[].title`  |  string |  The title of the movie       |
 |  `results[].original_title`  | string  |    The original title of the movie      |
 |  `results[].original_language`  | string  |    The original language of the movie     |
-|  `results[].backdrop_path` | string | The partial path of the movie's backdrop image.
+|  `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the /configuration API  |
 |  `results[].overview`  | string  |    The description of the movie     |
 |  `results[].popularity`  | number  |    TMDB's popularity score for the movie     |
 |  `results[].poster_path`  | string  |    The partial path of the movie's poster image     |
