@@ -74,172 +74,6 @@ print(response.text)
         },
         {
             "adult": false,
-            "backdrop_path": "/hMPHmocpwcMKoHCpcUKFbx7Uq1A.jpg",
-            "genre_ids": [
-                18
-            ],
-            "id": 51976,
-            "title": "Hermano",
-            "original_language": "es",
-            "original_title": "Hermano",
-            "overview": "Daniel es un delantero excepcional, un fenómeno. Julio, el capitán del equipo, es un líder nato. Ambos son hermanos de crianza y juegan al fútbol en el pequeño barrio de “La Ceniza”. Mientras Daniel desea con todas sus fuerzas llegar a ser un futbolista profesional, Julio mantiene a su familia con dinero sucio y no tiene tiempo para soñar. La oportunidad de sus vidas llega cuando un cazatalentos los invita a unas pruebas en el famoso equipo de la ciudad: el “Caracas Fútbol Club”. En ese momento una tragedia los sacude y deben decidir, a patadas y sobre una cancha de tierra, qué es más importante: la unión de la familia, el sabor de la venganza o el sueño de sus vidas.",
-            "popularity": 0.8241,
-            "poster_path": "/1nTTDblwirJMMhqeJu70pAmetuK.jpg",
-            "release_date": "2010-07-02",
-            "video": false,
-            "vote_average": 6.7,
-            "vote_count": 30
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/6VJXuJoGOnowrnkja03ydYQN7V0.jpg",
-            "genre_ids": [
-                35,
-                18
-            ],
-            "id": 43541,
-            "title": "Dos hermanos",
-            "original_language": "es",
-            "original_title": "Dos hermanos",
-            "overview": "Marcos y Susana, dos hermanos que rondan los sesenta, viven en un continuo y cómico enfrentamiento. Sus vidas y sus temperamentos son completamente distintos, pero se ven obligados a afianzar su relación tras la muerte de su madre. Susana, con una personalidad entre avasalladora y delirante, y que siempre hace los bussines en la familia, convence a su hermano Marcos, un orfebre culto y sensible, para que compre una vieja casa en un pequeño pueblo uruguayo. Comenzarán así un nuevo periodo de su vida en el que no sabrán estar juntos ni separados.",
-            "popularity": 0.2348,
-            "poster_path": "/gXIKoLIVNij1bgeQFo5y68t7qP4.jpg",
-            "release_date": "2010-04-01",
-            "video": false,
-            "vote_average": 6.7,
-            "vote_count": 20
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                16
-            ],
-            "id": 44430,
-            "title": "Hermie & Friends: Antonio Meets His Match",
-            "original_language": "en",
-            "original_title": "Hermie & Friends: Antonio Meets His Match",
-            "overview": "",
-            "popularity": 0.7118,
-            "poster_path": "/npSAVeXf29LN85PzTnrG0UxLWm3.jpg",
-            "release_date": "2010-06-14",
-            "video": false,
-            "vote_average": 6.0,
-            "vote_count": 1
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/sAnVDIFIsZgpZahShxCRlrQodEF.jpg",
-            "genre_ids": [
-                35
-            ],
-            "id": 269180,
-            "title": "L'année des guignols - Et il est où Hervé Miaou ?!",
-            "original_language": "fr",
-            "original_title": "L'année des guignols - Et il est où Hervé Miaou ?!",
-            "overview": "",
-            "popularity": 0.0848,
-            "poster_path": "/jlkS9L5bnmONHidolMDa0GUMo2A.jpg",
-            "release_date": "2010-10-26",
-            "video": true,
-            "vote_average": 8.0,
-            "vote_count": 1
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                99,
-                36
-            ],
-            "id": 134681,
-            "title": "Lafayette: The Lost Hero",
-            "original_language": "en",
-            "original_title": "Lafayette: The Lost Hero",
-            "overview": "",
-            "popularity": 0.356,
-            "poster_path": "/ndtPdT8f7iJRJhRqygfYTmFodKC.jpg",
-            "release_date": "2010-09-13",
-            "video": false,
-            "vote_average": 10.0,
-            "vote_count": 1
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                16,
-                10751
-            ],
-            "id": 980779,
-            "title": "Hermie and Friends: Who's in Charge Anyway?",
-            "original_language": "en",
-            "original_title": "Hermie and Friends: Who's in Charge Anyway?",
-            "overview": "",
-            "popularity": 0.0927,
-            "poster_path": "/ue2EaIM5hkXWPSoP651gPQqTQuQ.jpg",
-            "release_date": "2010-05-01",
-            "video": false,
-            "vote_average": 0.0,
-            "vote_count": 0
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                99
-            ],
-            "id": 506089,
-            "title": "Our Marine World Heritage",
-            "original_language": "en",
-            "original_title": "Our Marine World Heritage",
-            "overview": "",
-            "popularity": 0.3293,
-            "poster_path": "/ccYsqSP0jauMqU7C81LGKIQYwWm.jpg",
-            "release_date": "2010-02-18",
-            "video": false,
-            "vote_average": 5.0,
-            "vote_count": 2
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                35
-            ],
-            "id": 508787,
-            "title": "Monster Heroes",
-            "original_language": "en",
-            "original_title": "Monster Heroes",
-            "overview": "",
-            "popularity": 0.4141,
-            "poster_path": null,
-            "release_date": "2010-12-08",
-            "video": false,
-            "vote_average": 0.0,
-            "vote_count": 0
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [
-                16,
-                99
-            ],
-            "id": 150751,
-            "title": "When Herzog Rescued Phoenix",
-            "original_language": "en",
-            "original_title": "When Herzog Rescued Phoenix",
-            "overview": "",
-            "popularity": 0.3374,
-            "poster_path": null,
-            "release_date": "2010-09-13",
-            "video": false,
-            "vote_average": 5.0,
-            "vote_count": 2
-        },
-        {
-            "adult": false,
             "backdrop_path": "/j4wwKS0aokfGe7QDYqU2k6744hi.jpg",
             "genre_ids": [
                 99,
@@ -256,40 +90,6 @@ print(response.text)
             "video": false,
             "vote_average": 5.977,
             "vote_count": 22
-        },
-        {
-            "adult": false,
-            "backdrop_path": null,
-            "genre_ids": [],
-            "id": 1478494,
-            "title": "LA HERMANA ERRANTE",
-            "original_language": "fr",
-            "original_title": "LA HERMANA ERRANTE",
-            "overview": "Retrato de Juana Molina - Archivos de Buenos Aires",
-            "popularity": 0.1007,
-            "poster_path": null,
-            "release_date": "2010-02-01",
-            "video": false,
-            "vote_average": 0.0,
-            "vote_count": 0
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/oveGU066wcMACD6EJnY15rxqpkb.jpg",
-            "genre_ids": [
-                18
-            ],
-            "id": 348358,
-            "title": "Cuando el corazón se rompe",
-            "original_language": "de",
-            "original_title": "Rosamunde Pilcher: Wenn das Herz zerbricht",
-            "overview": "Jessica y Oliver forman una pareja perfecta dentro de la alta sociedad londinense, pero Jessica aún espera que su pareja le pida matrimonio. Al conocer a Max, la vida de Jessica cambia por completo.",
-            "popularity": 0.1352,
-            "poster_path": "/x7clkfV9AQ42KMOYDpnbnNBeBhC.jpg",
-            "release_date": "2010-10-10",
-            "video": false,
-            "vote_average": 3.0,
-            "vote_count": 6
         },
         {
             "adult": false,
@@ -327,44 +127,6 @@ print(response.text)
             "video": false,
             "vote_average": 5.3,
             "vote_count": 3
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/xvQnsFh8nCHbhgVe8PfNLtY5eDV.jpg",
-            "genre_ids": [
-                16,
-                36,
-                12
-            ],
-            "id": 75955,
-            "title": "Heroes Verdaderos",
-            "original_language": "es",
-            "original_title": "Heroes Verdaderos",
-            "overview": "Cinco jóvenes (un criollo, tres indígenas y un mestizo) se ven involucrados por azares del destino en el movimiento de Independencia de México. A través de sus ojos y acompañados de emocionantes aventuras y buen humor se conocerán personajes históricos y sus hazañas y movimientos como la conspiración de Querétaro, el grito de Dolores y las campañas de Hidalgo, Allende y Morelos, hasta llegar a la culminación del movimiento. (FILMAFFINITY)",
-            "popularity": 0.4437,
-            "poster_path": "/1vlMZBcBIoCHjOtOVk9FHAF0lPb.jpg",
-            "release_date": "2010-09-24",
-            "video": false,
-            "vote_average": 5.8,
-            "vote_count": 4
-        },
-        {
-            "adult": false,
-            "backdrop_path": "/5maw6b0mribcCGkU3Q0KmyYjDgO.jpg",
-            "genre_ids": [
-                35
-            ],
-            "id": 951230,
-            "title": "Ever Here I Be",
-            "original_language": "en",
-            "original_title": "Ever Here I Be",
-            "overview": "",
-            "popularity": 0.7873,
-            "poster_path": "/djTNwgmXKNNJ4PHbTbWTUrgvVHj.jpg",
-            "release_date": "2010-06-21",
-            "video": false,
-            "vote_average": 8.0,
-            "vote_count": 1
         },
         {
             "adult": false,
@@ -427,7 +189,7 @@ print(response.text)
 ## Response fields
 | Field | Type | Description |
 |-------|------|-------------|
-| `page`   | integer  |  The current page of results      |
+| `page`   | integer  |  The page number with the corresponding results      |
 | `results`   | array  |  List of matching movies      |
 |  `total_pages`  |  integer |   The total number of pages available for this query     |
 |  `total_results`  |  integer |   The total number of movies available for this query     |
