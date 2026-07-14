@@ -73,37 +73,55 @@ Requires a Bearer token in the `Authorization` header. See [Authentication](../0
 
 
 ## Example request
-<curl --location 'https://api.themoviedb.org/3/discover/movie?certification=UA&certification_country=IN&sort_by=popularity.desc&with_watch_monetization_types=flatrate&watch_region=IN&language=en-US' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+## Example request
 
-< const myHeaders = new Headers();
-myHeaders.append("Authorization", Bearer "YOUR_ACCESS_TOKEN");
+<Tabs groupId="api-language">
+<TabItem value="curl" label="cURL">
+
+```bash
+curl --location 'https://api.themoviedb.org/3/discover/movie?certification=UA&certification_country=IN&sort_by=popularity.desc&with_watch_monetization_types=flatrate&watch_region=IN&language=en-US' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
+
+</TabItem>
+<TabItem value="javascript" label="JavaScript">
+
+```javascript
+const myHeaders = new Headers();
+myHeaders.append("Authorization", "Bearer YOUR_ACCESS_TOKEN");
 
 const requestOptions = {
   method: "GET",
   headers: myHeaders,
-  redirect: "follow"
+  redirect: "follow",
 };
 
 fetch("https://api.themoviedb.org/3/discover/movie?certification=UA&certification_country=IN&sort_by=popularity.desc&with_watch_monetization_types=flatrate&watch_region=IN&language=en-US", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
-  .catch((error) => console.error(error));>
+  .catch((error) => console.error(error));
+```
 
-<Python requests import requests
+</TabItem>
+<TabItem value="python" label="Python">
+
+```python
+import requests
 
 url = "https://api.themoviedb.org/3/discover/movie?certification=UA&certification_country=IN&sort_by=popularity.desc&with_watch_monetization_types=flatrate&watch_region=IN&language=en-US"
 
 payload = {}
 headers = {
-  'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN"
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
+```
 
->
+</TabItem>
+</Tabs>
 
 ## Example response
 <trimmed {
