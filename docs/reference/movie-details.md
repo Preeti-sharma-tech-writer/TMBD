@@ -18,36 +18,46 @@ Requires a Bearer token in the Authorization header. See [Authentication](../03-
 
 
 ## Example request
+## Example request
+
+<Tabs groupId="api-language">
+<TabItem value="curl" label="cURL">
+
+```bash
 curl --location 'https://api.themoviedb.org/3/movie/313' \
 --header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
-  
-<JavaScript const myHeaders = new Headers();
+```
+
+</TabItem>
+<TabItem value="javascript" label="JavaScript">
+
+```javascript
+const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer YOUR_ACCESS_TOKEN");
 
 const requestOptions = {
   method: "GET",
   headers: myHeaders,
-  redirect: "follow"
+  redirect: "follow",
 };
 
 fetch("https://api.themoviedb.org/3/movie/313", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
+```
 
-<Python import requests
+</TabItem>
+<TabItem value="python" label="Python">
+
+```python
+import requests
 
 url = "https://api.themoviedb.org/3/movie/313"
 
 payload = {}
 headers = {
-  'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
-}
-
-response = requests.request("GET", url, headers=headers, data=payload)
-
-print(response.text)
-
+    "Authorization": "Bearer
 
 ## Example response
 {
