@@ -19,36 +19,55 @@ Requires a Bearer token in the Authorization header. See [Authentication](../03-
 | `page`  | query  |  integer | no | Returns the specified page of results. Defaults to `1`.|
 
 ## Example request
-<curl --location 'https://api.themoviedb.org/3/search/movie?query=her&include_adult=false&language=es-ES&primary_release_year=2010&page=3' \
---header 'Authorization: Bearer YOUR_ACCESS_TOKEN'>
-  
-<JavaScript const myHeaders = new Headers();
+## Example request
+
+<Tabs groupId="api-language">
+<TabItem value="curl" label="cURL">
+
+```bash
+curl --location 'https://api.themoviedb.org/3/search/movie?query=her&include_adult=false&language=es-ES&primary_release_year=2010&page=3' \
+--header 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```
+
+</TabItem>
+<TabItem value="javascript" label="JavaScript">
+
+```javascript
+const myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer YOUR_ACCESS_TOKEN");
 
 const requestOptions = {
   method: "GET",
   headers: myHeaders,
-  redirect: "follow"
+  redirect: "follow",
 };
 
 fetch("https://api.themoviedb.org/3/search/movie?query=her&include_adult=false&language=es-ES&primary_release_year=2010&page=3", requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result))
-  .catch((error) => console.error(error));>
-  
-<Python import requests
+  .catch((error) => console.error(error));
+```
+
+</TabItem>
+<TabItem value="python" label="Python">
+
+```python
+import requests
 
 url = "https://api.themoviedb.org/3/search/movie?query=her&include_adult=false&language=es-ES&primary_release_year=2010&page=3"
 
 payload = {}
 headers = {
-  'Authorization': 'Bearer YOUR_ACCESS_TOKEN'
+    "Authorization": "Bearer YOUR_ACCESS_TOKEN"
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
->
+```
+
+</TabItem>
+</Tabs>
 
 ## Example response
 <trimmed {
