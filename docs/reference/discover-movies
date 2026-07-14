@@ -73,7 +73,7 @@ Requires a Bearer token in the `Authorization` header. See [Authentication](../0
 
 
 ## Example request
-## Example request
+
 
 <Tabs groupId="api-language">
 <TabItem value="curl" label="cURL">
@@ -124,7 +124,8 @@ print(response.text)
 </Tabs>
 
 ## Example response
-<trimmed {
+```json
+{
     "page": 1,
     "results": [
         {
@@ -190,7 +191,8 @@ print(response.text)
     ],
     "total_pages": 118,
     "total_results": 2359
-}>
+}
+```
 
 ## Response fields
 
