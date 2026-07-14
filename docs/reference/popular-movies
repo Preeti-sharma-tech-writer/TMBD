@@ -69,7 +69,8 @@ print(response.text)
 </Tabs>
 
 ## Example response
-<trimmed {
+```json
+{
     "page": 1,
     "results": [
         {
@@ -134,7 +135,8 @@ print(response.text)
     ],
     "total_pages": 57937,
     "total_results": 1158724
-}>
+}
+```
 
 **Note**: The list updates frequently; your results will differ from the example.
 
@@ -143,7 +145,7 @@ print(response.text)
 |-------|------|-------------|
 | `page`  | integer  | The page number with the corresponding results  |
 | `results[].adult`  | boolean  | Whether the movie is classified as adult content  |
-| `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the /configuration API |
+| `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the [/configuration](./configuration.md) API |
 | `results[].genre_ids` | array  |   The id(s) of the genre of the movie  |
 | `results[].id` | integer  |   The id of the movie    |
 | `results[].title` | string | The title of the movie. The title is changed to the language set in query param   |
