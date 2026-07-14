@@ -18,7 +18,6 @@ Requires a Bearer token in the Authorization header. See [Authentication](../03-
 
 
 ## Example request
-## Example request
 
 <Tabs groupId="api-language">
 <TabItem value="curl" label="cURL">
@@ -60,6 +59,8 @@ headers = {
     "Authorization": "Bearer
 
 ## Example response
+
+```json
 {
     "adult": false,
     "backdrop_path": "/aN5soKp3KMT5Z0LmA9lAu44V3R9.jpg",
@@ -129,6 +130,7 @@ headers = {
     "vote_average": 7.119,
     "vote_count": 193,
 }
+```
 
 ## Response fields
 | Field | Type | Description |
