@@ -70,7 +70,7 @@ print(response.text)
 </Tabs>
 
 ## Example response
-<trimmed {
+```json {
     "page": 3,
     "results": [
         {
@@ -204,6 +204,7 @@ print(response.text)
     "total_pages": 10,
     "total_results": 198
 }
+```
 
 ## Response fields
 | Field | Type | Description |
@@ -218,7 +219,7 @@ print(response.text)
 | `results[].title` | string | The title of the movie. The title is changed to the language set in query param   |
 |  `results[].original_title`  | string  |    The original title of the movie      |
 | `results[].original_language` | string |    The original language of the movie. The format used is iso_639_1      |
-|  `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the /configuration API  |
+|  `results[].backdrop_path` | string | The partial path of the movie's backdrop image. Retrieve the full image URL by calling the [/configuration](docs/reference/configuration) API  |
 | `results[].overview` | string |     The description of the movie. The overview is changed to the language set in query param    |
 |  `results[].popularity`  | number  |    TMDB's popularity score for the movie     |
 |  `results[].poster_path`  | string  |    The partial path of the movie's poster image     |
