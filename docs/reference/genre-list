@@ -62,7 +62,8 @@ print(response.text)
 </Tabs>
 
 ## Example response
-<trimmed {
+```json
+{
     "genres": [
         {
             "id": 28,
@@ -97,7 +98,8 @@ print(response.text)
             "name": "Western"
         }
     ]
-}>
+}
+```
 
 ## Response fields
 | Field | Type | Description |
