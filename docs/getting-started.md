@@ -1,4 +1,4 @@
-# Getting Started 
+# Quick Start
 
 Welcome to the TMDB API documentation. By the end of this guide, you will understand the basics needed to make a successful API request.
 To get started, generate your API credentials from Settings > [API page](https://www.themoviedb.org/settings/api). Before a token is issued, you will need to agree to the [terms of use](https://www.themoviedb.org/api-terms-of-use). TMDB then issues an access token that authenticates your requests.
