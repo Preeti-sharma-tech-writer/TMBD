@@ -61,7 +61,8 @@ print(response.text)
 </Tabs>
 
 ## Example response
-<trimmed {
+```json
+ {
     "change_keys": [
         "adult",
         "air_date",
@@ -158,7 +159,8 @@ print(response.text)
             "original"
         ]
     }
-}>
+}
+```
 
 ## Response fields
 | Field | Type | Description |
