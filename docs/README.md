@@ -1,20 +1,18 @@
 # TMDB API Documentation — Contents
 
 ## Get started
-- [Overview](01-overview.md)
-- [Quickstart](02-quickstart.md)
+- [Overview](./overview.md)
+- [Quickstart](./getting-started.md)
 
 ## API reference
-- [Search Movies](reference/search-movies.md)
-- [Movie Details](reference/movie-details.md)
-- [Popular Movies](reference/popular-movies.md)
-- [Discover Movies](reference/discover-movies.md)
-- [Movie Genres](reference/movie-genres.md)
-- [Configuration](reference/configuration.md)
+- [Search Movies](../reference/search-movies.md)
+- [Movie Details](../reference/movie-details.md)
+- [Popular Movies](../reference/popular-movies.md)
+- [Discover Movies](../reference/discover-movies.md)
+- [Movie Genres](../reference/genre-list.md)
+- [Configuration](../reference/configuration.md)
 
 ## Reference material
-- [Working with images](guides/working-with-images.md)
-- [Errors](errors.md)
-- [Rate limits](rate-limits.md)
-- [Glossary](glossary.md)
-- [Changelog](changelog.md)
+- [Working with images](../reference-material/working-with-images.md)
+- [Errors](../reference-material/errors.md)
+- [Glossary](../reference-material/glossary.md)
