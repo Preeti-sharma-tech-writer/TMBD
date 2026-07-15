@@ -1,8 +1,8 @@
 # TMDB API — Documentation (Portfolio Project)
 
-This project is an independent API documentation that is infered from the already existing TMDB API Documentation and is a technical-writing portfolio piece created by Preeti Sharma.
+This is independent reference documentation for the TMDB API, created as a technical-writing portfolio piece by Preeti Sharma.
 
-Every endpoint was tested directly in Postman, and every example response or the corresponding error code are real captured result. Anything which is not testable or didn't provide the expected response are not included in the documentation. Hence, some deviation from the official API documenattion is expected. 
+Every endpoint is tested directly in Postman, and every example response or the corresponding error code is real captured result. Anything that is not testable, or that doesn't return the expected response is excluded from the documentation. Hence, some deviation from the official [API documentation](https://developer.themoviedb.org/reference/getting-started) is expected and intentional.
 
 ## What's inside
 
