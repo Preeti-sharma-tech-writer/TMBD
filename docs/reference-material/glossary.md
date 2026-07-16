@@ -36,3 +36,5 @@
 
   <dt>Number</dt>
   <dd>A numeric value that can include decimals. For example, <code>8.5</code> or <code>697.4596</code>.</dd>
+
+</dl>

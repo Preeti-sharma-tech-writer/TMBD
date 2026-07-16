@@ -58,6 +58,9 @@ payload = {}
 headers = {
     "Authorization": "Bearer
 
+</TabItem>
+</Tabs>
+
 ## Example response
 
 ```json
